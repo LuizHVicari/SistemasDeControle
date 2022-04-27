@@ -1,4 +1,4 @@
-%Resolução Lista 4 - Sistemas de Controle 2
+%Resolução Lista 5 - Sistemas de Controle 2
 clc;
 %==========================================================================
 %Questão 2
