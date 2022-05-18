@@ -1,0 +1,17 @@
+clear;
+clc;
+G = tf(2, [1, 3, 2, 0]);
+sReal = -1;
+sImag = 1i;
+s1 = sReal + sImag;
+s2 = sReal - sImag;
+Gfase = 1 / (s1*(s1+1)*(s1+2));
+fase = rad2deg(angle(Gfase));
+faseNegativa = fase - 360;
+disp('Fase negativa de G(s1):');
+disp(faseNegativa);
+disp('Fase de G(s1):');
+disp(fase);
+angContrib = 180 - fase;
+disp('Contribuição angular:');
+disp(angContrib);

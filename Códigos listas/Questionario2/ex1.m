@@ -1,0 +1,12 @@
+clc;
+clear;
+disp('====Questão 1====');
+G = tf(1, [1, 6, 8]);
+err = 0.05;
+kp = 1 / 8;
+kp_ = 1 / err - 1;
+disp('Constante de erro estático de posição:');
+disp(kp_);
+b = kp_ / kp;
+disp('B:');
+disp(b);

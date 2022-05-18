@@ -1,0 +1,13 @@
+clear;
+clc;
+up = 0.15;
+ts = 0.5;
+zeta = -log(up) / sqrt(pi^2 + log(up)^2);
+wn = 4 / (ts*zeta);
+disp('Coeficiente de amortecimento:');
+disp(zeta);
+disp('Frequencia natural:');
+disp(wn);
+s1 = -zeta*wn + wn*1i*sqrt(1-zeta^2);
+disp('Polo 1:');
+disp(s1);
