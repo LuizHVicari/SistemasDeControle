@@ -1,0 +1,12 @@
+A = [0, 1; 4, 0]
+B = [0; 1]
+C = [2, 0]
+D = 0
+polos_desejados = [2, 2]
+% matriz de controlabilidade
+Mcontr = ctrb(A, B)
+% posto da matriz de controlabilidade
+rank(Mcontr)
+syms s
+eq = (s + 2) ^ 2 % = s^2 + 4s + 4
+phi = eq * 
