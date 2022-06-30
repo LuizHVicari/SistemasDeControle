@@ -1,0 +1,11 @@
+A = [1, 2; -2, -3];
+B = [1; 0];
+C = [0, 1];
+D = 0;
+N = obsv(A, C)
+posto_obsv= rank(N)
+soma_obsv = 1 -2 -3
+polos_desejados = [-15, -15]
+phiA = A ^ 2 + 30 * A + 225 * eye(posto_obsv)
+soma_phi = 252 + 56 -56 + 140
+Ke = acker(A', C', polos_desejados)'
